@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		896BD4FEF16624C7ACF2FF68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E59BF442231242A340B1CCD /* libPods.a */; };
 		FD8D8D441BFAF069005305F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8D8D431BFAF069005305F6 /* main.m */; };
 		FD8D8D471BFAF069005305F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8D8D461BFAF069005305F6 /* AppDelegate.m */; };
 		FD8D8D4A1BFAF069005305F6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8D8D491BFAF069005305F6 /* FirstViewController.m */; };
@@ -43,6 +44,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C5B13DEA52DA52D4EF75EB3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3E59BF442231242A340B1CCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8DDBE8F98779BB867ACBDB2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FD8D8D3F1BFAF069005305F6 /* FlickrTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8D8D431BFAF069005305F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD8D8D451BFAF069005305F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896BD4FEF16624C7ACF2FF68 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F66276ECFC98B018DA5DCE2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8DDBE8F98779BB867ACBDB2 /* Pods.debug.xcconfig */,
+				3C5B13DEA52DA52D4EF75EB3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FD8D8D361BFAF069005305F6 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +101,7 @@
 				FD8D8D611BFAF081005305F6 /* FlickrTVExtension */,
 				FD8D8D5E1BFAF081005305F6 /* Frameworks */,
 				FD8D8D401BFAF069005305F6 /* Products */,
+				F66276ECFC98B018DA5DCE2D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				FD8D8D5F1BFAF081005305F6 /* TVServices.framework */,
+				3E59BF442231242A340B1CCD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,10 +165,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD8D8D561BFAF069005305F6 /* Build configuration list for PBXNativeTarget "FlickrTV" */;
 			buildPhases = (
+				11774F1C0177B38DA7C6F179 /* Check Pods Manifest.lock */,
 				FD8D8D3B1BFAF069005305F6 /* Sources */,
 				FD8D8D3C1BFAF069005305F6 /* Frameworks */,
 				FD8D8D3D1BFAF069005305F6 /* Resources */,
 				FD8D8D6C1BFAF081005305F6 /* Embed App Extensions */,
+				052AC4362BEC4B2551778C28 /* Embed Pods Frameworks */,
+				0A56AEB61857A93365075D1F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +254,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		052AC4362BEC4B2551778C28 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A56AEB61857A93365075D1F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11774F1C0177B38DA7C6F179 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD8D8D3B1BFAF069005305F6 /* Sources */ = {
@@ -360,6 +427,7 @@
 		};
 		FD8D8D571BFAF069005305F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8DDBE8F98779BB867ACBDB2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -372,6 +440,7 @@
 		};
 		FD8D8D581BFAF069005305F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5B13DEA52DA52D4EF75EB3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -423,6 +492,7 @@
 				FD8D8D581BFAF069005305F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD8D8D691BFAF081005305F6 /* Build configuration list for PBXNativeTarget "FlickrTVExtension" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +501,7 @@
 				FD8D8D6B1BFAF081005305F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
