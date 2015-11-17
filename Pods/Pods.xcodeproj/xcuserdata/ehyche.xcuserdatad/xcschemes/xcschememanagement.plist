@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-FlickrTVExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>127A303F2DE9AAB8F5DF945929DC4903</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>373EAA51049355BE5FE80C53B351E65C</key>
 		<dict>
 			<key>primary</key>

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3DBB25462B293FCC924AF017'
-               BlueprintName = 'Pods'
+               BlueprintIdentifier = '53CBEED25E9655175CE765AD'
+               BlueprintName = 'Pods-FlickrTVExtension'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods.a'>
+               BuildableName = 'libPods-FlickrTVExtension.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
