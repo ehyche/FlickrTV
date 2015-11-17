@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		706FF08889D3C84908CC685C /* libPods-FlickrTVExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E438EF7822D1910DB6B23002 /* libPods-FlickrTVExtension.a */; };
 		896BD4FEF16624C7ACF2FF68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E59BF442231242A340B1CCD /* libPods.a */; };
 		FD8D8D441BFAF069005305F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8D8D431BFAF069005305F6 /* main.m */; };
 		FD8D8D471BFAF069005305F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8D8D461BFAF069005305F6 /* AppDelegate.m */; };
@@ -17,6 +18,7 @@
 		FD8D8D601BFAF081005305F6 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8D8D5F1BFAF081005305F6 /* TVServices.framework */; };
 		FD8D8D641BFAF081005305F6 /* ServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8D8D631BFAF081005305F6 /* ServiceProvider.m */; };
 		FD8D8D681BFAF081005305F6 /* FlickrTVExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD8D8D5D1BFAF081005305F6 /* FlickrTVExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD8D8D6E1BFAF350005305F6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8D8D6D1BFAF350005305F6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 /* Begin PBXFileReference section */
 		3C5B13DEA52DA52D4EF75EB3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3E59BF442231242A340B1CCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BEFFDF3ACF4157846723A56 /* Pods-FlickrTVExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrTVExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrTVExtension/Pods-FlickrTVExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		8ED358A221196ED8D0929620 /* Pods-FlickrTVExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrTVExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrTVExtension/Pods-FlickrTVExtension.release.xcconfig"; sourceTree = "<group>"; };
+		E438EF7822D1910DB6B23002 /* libPods-FlickrTVExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlickrTVExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DDBE8F98779BB867ACBDB2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FD8D8D3F1BFAF069005305F6 /* FlickrTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8D8D431BFAF069005305F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 		FD8D8D621BFAF081005305F6 /* ServiceProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceProvider.h; sourceTree = "<group>"; };
 		FD8D8D631BFAF081005305F6 /* ServiceProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceProvider.m; sourceTree = "<group>"; };
 		FD8D8D651BFAF081005305F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD8D8D6D1BFAF350005305F6 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-appletvos/libPods.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8D8D6E1BFAF350005305F6 /* libPods.a in Frameworks */,
 				FD8D8D601BFAF081005305F6 /* TVServices.framework in Frameworks */,
+				706FF08889D3C84908CC685C /* libPods-FlickrTVExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +98,8 @@
 			children = (
 				E8DDBE8F98779BB867ACBDB2 /* Pods.debug.xcconfig */,
 				3C5B13DEA52DA52D4EF75EB3 /* Pods.release.xcconfig */,
+				4BEFFDF3ACF4157846723A56 /* Pods-FlickrTVExtension.debug.xcconfig */,
+				8ED358A221196ED8D0929620 /* Pods-FlickrTVExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -142,8 +152,10 @@
 		FD8D8D5E1BFAF081005305F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD8D8D6D1BFAF350005305F6 /* libPods.a */,
 				FD8D8D5F1BFAF081005305F6 /* TVServices.framework */,
 				3E59BF442231242A340B1CCD /* libPods.a */,
+				E438EF7822D1910DB6B23002 /* libPods-FlickrTVExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD8D8D691BFAF081005305F6 /* Build configuration list for PBXNativeTarget "FlickrTVExtension" */;
 			buildPhases = (
+				F441E801240A77DAAACE49C5 /* Check Pods Manifest.lock */,
 				FD8D8D591BFAF081005305F6 /* Sources */,
 				FD8D8D5A1BFAF081005305F6 /* Frameworks */,
 				FD8D8D5B1BFAF081005305F6 /* Resources */,
+				33A84879010119A39502FC84 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +301,36 @@
 			showEnvVarsInLog = 0;
 		};
 		11774F1C0177B38DA7C6F179 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		33A84879010119A39502FC84 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlickrTVExtension/Pods-FlickrTVExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F441E801240A77DAAACE49C5 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,9 +497,14 @@
 		};
 		FD8D8D6A1BFAF081005305F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BEFFDF3ACF4157846723A56 /* Pods-FlickrTVExtension.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FlickrTVExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-appletvos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.erichyche.FlickrTV.FlickrTVExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -464,9 +513,14 @@
 		};
 		FD8D8D6B1BFAF081005305F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED358A221196ED8D0929620 /* Pods-FlickrTVExtension.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FlickrTVExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-appletvos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.erichyche.FlickrTV.FlickrTVExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
